@@ -8,7 +8,10 @@ import errorHandler from '../errors/errorHandler';
 import morganHttpLogger from '../middleware/morganHttpLogger';
 
 dotenv.config();
-const PORT = process.env.PORT;
+
+
+const PORT = process.env.PORT || 8080;
+
 
 
 class Server {

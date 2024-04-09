@@ -26,6 +26,8 @@ const Navbar: React.FC = () => {
             if (response.data) {
                 console.log('Response from backend:', response.data);
                 return navigate('/single', { state: { data: response.data } })
+            } else {
+                window.alert('Your search term was not found');
             }
 
         } catch (error) {
